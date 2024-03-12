@@ -626,7 +626,7 @@ read it before opening a new issue about your will.")
                ;; magit
                (magit-branch-local :foreground ,dracula-cyan)
                (magit-branch-remote :foreground ,dracula-green)
-               (magit-refname :foreground ,dark-blue)
+               (magit-refname :foreground ,haris-blue)
                (magit-tag :foreground ,dracula-orange)
                (magit-hash :foreground ,dracula-comment)
                (magit-dimmed :foreground ,dracula-comment)
