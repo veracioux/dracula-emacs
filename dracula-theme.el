@@ -176,7 +176,8 @@ read it before opening a new issue about your will.")
                 (dracula-pink    "#ff79c6" "#ff87d7"        "magenta")        ; official pink
                 (dracula-purple  "#bd93f9" "#af87ff"        "brightmagenta")  ; official purple
                 (dracula-red     "#ff5555" "#ff8787"        "red")            ; official red
-                (haris-red-light "#ff8787" "#ff8787"        "red")            ; official red
+                (haris-red-light "#ff8787" "#ff8787"        "red")            ; haris red
+                (haris-blue      "#99a3ff" "#99a3ff"        "blue")           ; haris blue
                 (dracula-yellow  "#f1fa8c" "#ffff87"        "yellow")         ; official yellow
                 ;; Other colors
                 (bg1             "#272730")
@@ -851,7 +852,7 @@ read it before opening a new issue about your will.")
                (rainbow-delimiters-depth-5-face :foreground ,dracula-orange)
                (rainbow-delimiters-depth-6-face :foreground ,dracula-green)
                (rainbow-delimiters-depth-7-face :foreground ,dracula-yellow)
-               (rainbow-delimiters-depth-8-face :foreground ,dark-blue)
+               (rainbow-delimiters-depth-8-face :foreground ,haris-blue)
                (rainbow-delimiters-unmatched-face :foreground ,dracula-orange)
                ;; rpm-spec
                (rpm-spec-dir-face :foreground ,dracula-green)
