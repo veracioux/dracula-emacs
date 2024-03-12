@@ -168,7 +168,7 @@ read it before opening a new issue about your will.")
 (let ((colors '(;; Upstream theme color
                 (dracula-bg      "#202023" "unspecified-bg" "unspecified-bg") ; official background
                 (dracula-fg      "#dddddd" "brightwhite"    "brightwhite")    ; official foreground
-                (dracula-current "#44475a" "#303030"        "brightblack")    ; official current-line/selection
+                (dracula-current "#303030" "#303030"        "brightblack")    ; official current-line/selection
                 (dracula-comment "#6272a4" "#5f5faf"        "blue")           ; official comment
                 (dracula-cyan    "#8be9fd" "#87d7ff"        "brightcyan")     ; official cyan
                 (dracula-green   "#50fa7b" "#5fff87"        "green")          ; official green
@@ -176,6 +176,7 @@ read it before opening a new issue about your will.")
                 (dracula-pink    "#ff79c6" "#ff87d7"        "magenta")        ; official pink
                 (dracula-purple  "#bd93f9" "#af87ff"        "brightmagenta")  ; official purple
                 (dracula-red     "#ff5555" "#ff8787"        "red")            ; official red
+                (haris-red-light "#ff8787" "#ff8787"        "red")            ; official red
                 (dracula-yellow  "#f1fa8c" "#ffff87"        "yellow")         ; official yellow
                 ;; Other colors
                 (bg1             "#272730")
@@ -225,7 +226,7 @@ read it before opening a new issue about your will.")
                       (list :foreground dracula-comment :box dracula-bg)
                     (list :foreground fg4 :box bg2)))
                (read-multiple-choice-face :inherit completions-first-difference)
-               (region :inherit match :extend t)
+               (region :inherit match :extend t :foreground ,dracula-fg :weight bold)
                (shadow :foreground ,dracula-comment)
                (success :foreground ,dracula-green)
                (tooltip :foreground ,dracula-fg :background ,dracula-current)
@@ -312,9 +313,11 @@ read it before opening a new issue about your will.")
                (diff-added :background ,dark-green :foreground ,dracula-fg :extend t)
                (diff-removed :background ,dark-red :foreground ,dracula-fg :extend t)
                (diff-refine-added :background ,dracula-green
-                                  :foreground ,dracula-bg)
-               (diff-refine-removed :background ,dracula-red
-                                    :foreground ,dracula-fg)
+                                  :foreground ,dracula-bg
+                                  :weight bold)
+               (diff-refine-removed :background ,haris-red-light
+                                    :foreground ,bg1
+                                    :weight bold)
                (diff-indicator-added :foreground ,dracula-green)
                (diff-indicator-removed :foreground ,dracula-red)
                (diff-indicator-changed :foreground ,dracula-orange)
