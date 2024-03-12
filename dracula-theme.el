@@ -187,9 +187,9 @@ read it before opening a new issue about your will.")
                 (fg3             "#ccccc7" "#c6c6c6" "white")
                 (fg4             "#b6b6b2" "#b2b2b2" "white")
                 (other-blue      "#0189cc" "#0087ff"        "brightblue")
-                (dark-red        "#880000" "#870000" "red") ; 40% darker
-                (dark-green      "#037a22" "#00af00" "green") ; 40% darker
-                (dark-blue       "#0189cc" "#0087ff" "brightblue")))
+                (dark-red        "#450000" "#870000" "red") ; 40% darker
+                (dark-green      "#024d15" "#00af00" "green") ; 40% darker
+                (dark-blue       "#00344d" "#0087ff" "brightblue")))
       (faces '(;; default / basic faces
                (cursor :background ,fg3)
                (default :background ,dracula-bg :foreground ,dracula-fg)
@@ -366,9 +366,9 @@ read it before opening a new issue about your will.")
                (diredp-tagged-autofile-name :foreground ,dracula-yellow)
                ;; ediff
                (ediff-current-diff-A :background ,dark-red)
-               (ediff-fine-diff-A :background ,dracula-red :foreground ,dracula-fg)
+               (ediff-fine-diff-A :background ,dracula-red :foreground ,dracula-bg :weight bold)
                (ediff-current-diff-B :background ,dark-green)
-               (ediff-fine-diff-B :background ,dracula-green :foreground ,dracula-bg)
+               (ediff-fine-diff-B :background ,dracula-green :foreground ,dracula-bg :weight bold)
                (ediff-current-diff-C :background ,dark-blue)
                (ediff-fine-diff-C :background ,dracula-cyan :foreground ,dracula-bg)
                ;; eglot
