@@ -190,7 +190,7 @@ read it before opening a new issue about your will.")
                 (bg1             "#272730")
                 (bg2             "#373844" "#121212" "brightblack")
                 (bg3             "#565761" "#444444" "brightblack")
-                (bg4             "#565761" "#444444"        "brightblack")
+                (bg4             "#565761" "#444444" "brightblack")
                 (fg2             "#e2e2dc" "#e4e4e4" "brightwhite")
                 (fg3             "#ccccc7" "#c6c6c6" "white")
                 (fg4             "#b6b6b2" "#b2b2b2" "white")
@@ -911,8 +911,7 @@ read it before opening a new issue about your will.")
                                  :foreground ,dracula-cyan
                                  :weight bold)
                (show-paren-match-expression :inherit match)
-               (show-paren-mismatch :inherit font-lock-warning-face)
-               ;; shr
+               (show-paren-mismatch :inherit font-lock-warning-face) ;; shr
                (shr-h1 :foreground ,dracula-pink :weight bold :height 1.3)
                (shr-h2 :foreground ,dracula-purple :weight bold)
                (shr-h3 :foreground ,dracula-green :slant italic)
@@ -1068,6 +1067,8 @@ read it before opening a new issue about your will.")
                (erc-my-nick-face      :weight bold  :foreground ,dracula-pink)
                (erc-current-nick-face :weight bold  :foreground ,dracula-pink)
                (erc-notice-face       :weight bold  :foreground "slateblue")
+               ;; Custom and non-standard
+               (centaur-tabs-unselected :foreground ,dracula-fg)
                )))
 
   (apply #'custom-theme-set-faces
